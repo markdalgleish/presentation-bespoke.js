@@ -22,9 +22,9 @@ $ npm install
 
 `$ grunt` to generate all static content into the 'public' directory.
 
-`$ grunt server` to generate all static content and fire up a Connect server at http://localhost:8000.
+`$ grunt server` to generate all static content and fire up a Connect server at [http://localhost:8000](http://localhost:8000).
 
-`$ grunt dev` to fire up a Connect server at http://localhost:8000 and recompile whenever files are changed.
+`$ grunt dev` to fire up a Connect server at [http://localhost:8000](http://localhost:8000) and recompile whenever files are changed.
 
 ## Questions?
 
