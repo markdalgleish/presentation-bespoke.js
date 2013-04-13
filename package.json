@@ -1,0 +1,20 @@
+{
+  "name": "presentation-bespoke.js",
+  "version": "0.0.1",
+  "description": "Presentation: DIY Presentations with Bespoke.js",
+  "main": "grunt",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Mark Dalgleish",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-contrib-jade": "~0.5.0",
+    "grunt-contrib-stylus": "~0.5.0"
+  }
+}
