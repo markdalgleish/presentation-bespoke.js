@@ -53,6 +53,21 @@ module.exports = function(grunt) {
           dest: 'public/'
         }]
       }
+    },
+    connect: {
+      server: {
+        options: {
+          port: 8000,
+          base: 'public',
+          keepalive: true
+        }
+      }
+    },
+    parallel: {
+      grunt: {
+        grunt: true,
+        tasks: ['connect', 'watch']
+      }
     }
   });
 
@@ -60,10 +75,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-stylus');
+  grunt.loadNpmTasks('grunt-parallel');
 
   // Default task.
   grunt.registerTask('default', ['clean', 'jade', 'stylus', 'copy']);
+  grunt.registerTask('server', ['default', 'connect']);
+  grunt.registerTask('dev', ['parallel']);
 
 };

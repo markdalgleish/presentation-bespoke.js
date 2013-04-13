@@ -20,23 +20,11 @@ $ npm install
 
 ### Running the build
 
-To generate all static content into the 'public' directory, run the Grunt build:
+`$ grunt` to generate all static content into the 'public' directory.
 
-```bash
-$ grunt
-```
+`$ grunt server` to generate all static content and fire up a Connect server.
 
-To run the build whenever files are changed, use the 'watch' task:
-
-```bash
-$ grunt watch
-```
-
-On Mac, you can host a simple Python server from the 'public' directory like so:
-
-```bash
-$ cd public && python -m SimpleHTTPServer 8080
-```
+`$ grunt dev` to fire up a Connect server and recompile whenever files are changed.
 
 ## Questions?
 
